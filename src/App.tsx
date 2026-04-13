@@ -155,7 +155,7 @@ export default function App() {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-8">
-              <a href="#sobre-nosotros" className="text-sm font-medium hover:text-orange-600 transition-colors">sobre-nosotros</a>
+              <a href="#sobre-nosotros" className="text-sm font-medium hover:text-orange-600 transition-colors">Sobre Nosotros</a>
               <a href="#galeria" className="text-sm font-medium hover:text-orange-600 transition-colors">Galería</a>
               <a href="#opciones" className="text-sm font-medium hover:text-orange-600 transition-colors">Opciones</a>
               <a href="#contacto" className="text-sm font-medium hover:text-orange-600 transition-colors">Contacto</a>
@@ -183,7 +183,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden bg-white border-b border-slate-100 p-4 space-y-4"
           >
-            <a href="#sobre-nosotros" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>sobre-nosotros</a>
+            <a href="#sobre-nosotros" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Sobre Nosotros</a>
             <a href="#galeria" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Galería</a>
             <a href="#opciones" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Opciones</a>
             <a href="#contacto" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Contacto</a>
@@ -263,12 +263,8 @@ export default function App() {
       <section id="galeria" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-xl">
-            <h2 className="<h2 className="font-heading text-4xl lg:text-5xl font-bold mb-8 leading-tight">
-  Nuestra historia y compromiso con <span className="text-orange-600">tu hogar</span>.
-</h2>">Nuestro Trabajo</h2>
-            <p className="<p>
-  En <span className="font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Y&E Colors</span>, somos un equipo apasionado por la renovación de espacios. Con años de experiencia en Badajoz, nos hemos especializado en transformar paredes con gotelé en superficies lisas y modernas, aplicando siempre las mejores técnicas de pintura.
-</p>">
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-4">Nuestro Trabajo</h2>
+            <p className="text-slate-600">
               Una muestra de los proyectos que hemos realizado recientemente. Calidad visible en cada pincelada.
             </p>
           </div>
@@ -315,25 +311,19 @@ export default function App() {
             ))}
           </div>
         )}
-        {gallery.length === 0 && (
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12 bg-slate-50 rounded-[2rem] border border-dashed border-slate-200">
-            <p className="text-slate-500">Próximamente mostraremos aquí nuestros mejores trabajos.</p>
-          </div>
-        )}
       </section>
 
       {/* Options Section */}
       <section id="opciones" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-4">🧰 Nuestras Opciones – Tú eliges, nosotros lo hacemos perfecto</h2>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-4">🧰 Nuestras Opciones</h2>
             <p className="text-slate-600 max-w-3xl mx-auto text-lg">
-              En cada proyecto cuidamos hasta el último detalle. Por eso te ofrecemos diferentes opciones para que consigas exactamente el acabado que buscas, adaptado a tu estilo, necesidades y presupuesto.
+              En cada proyecto cuidamos hasta el último detalle. Por eso te ofrecemos diferentes opciones para que consigas exactamente el acabado que buscas.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Acabados */}
             <Card className="border-none shadow-sm">
               <CardHeader>
                 <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 text-2xl">🎨</div>
@@ -344,29 +334,11 @@ export default function App() {
                 <ul className="space-y-2 text-slate-600">
                   <li className="flex items-center gap-2">• Pintura mate, satinada o brillo</li>
                   <li className="flex items-center gap-2">• Acabados decorativos modernos</li>
-                  <li className="flex items-center gap-2">• Alisado de paredes: resultado liso</li>
-                  <li className="flex items-center gap-2">• Eliminación de gotelé</li>
+                  <li className="flex items-center gap-2">• Alisado de paredes</li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Preparación */}
-            <Card className="border-none shadow-sm">
-              <CardHeader>
-                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 text-2xl">🧱</div>
-                <CardTitle className="font-heading text-2xl">Preparación profesional</CardTitle>
-                <CardDescription>Un buen resultado empieza por una buena base:</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-slate-600">
-                  <li className="flex items-center gap-2">• Reparación de grietas y desperfectos</li>
-                  <li className="flex items-center gap-2">• Tratamientos antihumedad y antimoho</li>
-                  <li className="flex items-center gap-2">• Lijado y preparación completa</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Comodidad */}
             <Card className="border-none shadow-sm">
               <CardHeader>
                 <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 text-2xl">🏠</div>
@@ -376,95 +348,13 @@ export default function App() {
               <CardContent>
                 <ul className="space-y-2 text-slate-600">
                   <li className="flex items-center gap-2">• Protección de muebles y suelos</li>
-                  <li className="flex items-center gap-2">• Movimiento de mobiliario</li>
                   <li className="flex items-center gap-2">• Limpieza final incluida</li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Personalización */}
-            <Card className="border-none shadow-sm">
-              <CardHeader>
-                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 text-2xl">🎯</div>
-                <CardTitle className="font-heading text-2xl">Personalización</CardTitle>
-                <CardDescription>Te ayudamos a acertar:</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-slate-600">
-                  <li className="flex items-center gap-2">• Asesoramiento en colores</li>
-                  <li className="flex items-center gap-2">• Pruebas de color antes de empezar</li>
-                  <li className="flex items-center gap-2">• Ideas para paredes decorativas</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Servicio Rápido */}
-            <Card className="border-none shadow-sm">
-              <CardHeader>
-                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 text-2xl">⚡</div>
-                <CardTitle className="font-heading text-2xl">Servicio rápido y flexible</CardTitle>
-                <CardDescription>Nos adaptamos a ti:</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-slate-600">
-                  <li className="flex items-center gap-2">• Trabajos urgentes o exprés</li>
-                  <li className="flex items-center gap-2">• Horarios flexibles</li>
-                  <li className="flex items-center gap-2">• Presupuesto gratuito</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Garantía */}
-            <Card className="border-none shadow-sm">
-              <CardHeader>
-                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 text-2xl">🛡️</div>
-                <CardTitle className="font-heading text-2xl">Garantía y confianza</CardTitle>
-                <CardDescription>Trabajamos con seriedad:</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-slate-600">
-                  <li className="flex items-center gap-2">• Garantía por escrito</li>
-                  <li className="flex items-center gap-2">• Materiales de primera calidad</li>
-                  <li className="flex items-center gap-2">• Seguro de responsabilidad civil</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Ecológicas */}
-            <Card className="border-none shadow-sm">
-              <CardHeader>
-                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 text-2xl">🌿</div>
-                <CardTitle className="font-heading text-2xl">Opciones ecológicas</CardTitle>
-                <CardDescription>Cuidamos tu hogar y el entorno:</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-slate-600">
-                  <li className="flex items-center gap-2">• Pinturas ecológicas sin olores</li>
-                  <li className="flex items-center gap-2">• Procesos responsables</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Diferencia */}
-            <Card className="border-none shadow-sm">
-              <CardHeader>
-                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 text-2xl">⭐</div>
-                <CardTitle className="font-heading text-2xl">Marcar la diferencia</CardTitle>
-                <CardDescription>Porque importa:</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-slate-600">
-                  <li className="flex items-center gap-2">• Resultados “antes y después”</li>
-                  <li className="flex items-center gap-2">• Atención cercana y profesional</li>
-                  <li className="flex items-center gap-2">• Ofertas especiales</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* CTA Card */}
             <Card className="bg-orange-600 text-white border-none shadow-lg flex flex-col justify-center items-center p-8 text-center">
-              <p className="text-xl font-bold mb-2">👉 Pide tu presupuesto hoy mismo y transforma tu espacio sin complicaciones.</p>
-              <p className="text-orange-100 mb-6 font-medium">Escríbenos a: jbsdlc1@gmail.com</p>
+              <p className="text-xl font-bold mb-2">👉 Pide tu presupuesto hoy mismo.</p>
               <Button className="bg-white text-orange-600 hover:bg-orange-50 rounded-full font-bold px-8" asChild>
                 <a href="#contacto">¡Contactar Ahora!</a>
               </Button>
@@ -474,18 +364,18 @@ export default function App() {
       </section>
 
       {/* About Us Section */}
-      <section id="ye-colors" className="py-24 bg-white">
+      <section id="sobre-nosotros" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge className="bg-orange-100 text-orange-700 border-none mb-6 px-4 py-1">Sobre Nosotros</Badge>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-8 leading-tight">
-            Pasión por el detalle y compromiso con la <span className="text-orange-600">excelencia</span>.
+            Nuestra historia y compromiso con <span className="text-orange-600">tu hogar</span>.
           </h2>
           <div className="space-y-6 text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
             <p>
-              En <span className="font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Y&E Colors</span>, no solo pintamos paredes; transformamos hogares. Nacimos con la misión de ofrecer un servicio de pintura y alisado que destaque por su limpieza, puntualidad y acabados impecables.
+              En <span className="font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Y&E Colors</span>, somos un equipo apasionado por la renovación de espacios. Con años de experiencia en Badajoz, nos hemos especializado en transformar paredes con gotelé en superficies lisas y modernas, aplicando siempre las mejores técnicas de pintura.
             </p>
             <p>
-              Sabemos que tu casa es tu refugio. Por eso, tratamos cada proyecto como si fuera para nosotros mismos, protegiendo cada mueble y asegurando que, al terminar, lo único que notes sea la belleza de tus nuevas paredes.
+              No solo buscamos un cambio estético; buscamos la durabilidad y la satisfacción de nuestros clientes. Nuestra filosofía se basa en la honestidad, el respeto por tu vivienda y la búsqueda constante de la perfección en cada acabado.
             </p>
             <div className="grid grid-cols-2 gap-6 pt-8">
               <div className="flex flex-col items-center gap-3">
@@ -519,7 +409,7 @@ export default function App() {
               <div className="p-8 lg:p-16 bg-slate-50">
                 <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-6">Hablemos de tu proyecto</h2>
                 <p className="text-slate-600 mb-10 text-lg">
-                  ¿Necesitas un presupuesto personalizado? Rellena el formulario y nos pondremos en contacto contigo en menos de 24 horas.
+                  ¿Necesitas un presupuesto personalizado? Rellena el formulario y nos pondremos en contacto contigo.
                 </p>
                 
                 <div className="space-y-6">
@@ -541,24 +431,6 @@ export default function App() {
                       <p className="text-lg font-bold">jbsdlc1@gmail.com</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-orange-600">
-                      <MapPin size={24} />
-                    </div>
-                    <div>
-                      <p className="text-sm text-slate-500 font-medium">Ubicación</p>
-                      <p className="text-lg font-bold">Badajoz Capital</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-12 flex gap-4">
-                  <a href="#" className="w-10 h-10 bg-white rounded-full shadow-sm flex items-center justify-center text-slate-600 hover:text-orange-600 transition-colors">
-                    <Instagram size={20} />
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-white rounded-full shadow-sm flex items-center justify-center text-slate-600 hover:text-orange-600 transition-colors">
-                    <Facebook size={20} />
-                  </a>
                 </div>
               </div>
 
@@ -573,14 +445,7 @@ export default function App() {
                       <CheckCircle2 size={40} />
                     </div>
                     <h3 className="font-heading text-3xl font-bold">¡Solicitud Enviada!</h3>
-                    <p className="text-slate-600 text-lg max-w-sm">
-                      Gracias por confiar en nosotros. Tu gestor de correo se ha abierto para enviar los detalles. Te responderemos en menos de 24 horas.
-                    </p>
-                    <Button 
-                      variant="outline" 
-                      className="rounded-full"
-                      onClick={() => setFormStatus('idle')}
-                    >
+                    <Button variant="outline" className="rounded-full" onClick={() => setFormStatus('idle')}>
                       Enviar otro mensaje
                     </Button>
                   </motion.div>
@@ -591,42 +456,18 @@ export default function App() {
                       e.preventDefault();
                       const formData = new FormData(e.currentTarget);
                       const name = formData.get('name');
-                      const phone = formData.get('phone');
-                      const email = formData.get('email');
-                      const service = formData.get('service');
-                      const message = formData.get('message');
-                      
-                      const mailtoLink = `mailto:jbsdlc1@gmail.com?subject=Nueva Solicitud de Presupuesto - ${name}&body=Nombre: ${name}%0D%0ATeléfono: ${phone}%0D%0AEmail: ${email}%0D%0AServicio: ${service}%0D%0AMensaje: ${message}`;
+                      const mailtoLink = `mailto:jbsdlc1@gmail.com?subject=Presupuesto - ${name}`;
                       window.location.href = mailtoLink;
                       setFormStatus('success');
                     }}
                   >
-                    <div className="grid sm:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium">Nombre</label>
-                        <Input name="name" required placeholder="Tu nombre" className="rounded-xl border-slate-200 h-12" />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium">Teléfono</label>
-                        <Input name="phone" required placeholder="Tu teléfono" className="rounded-xl border-slate-200 h-12" />
-                      </div>
-                    </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Email</label>
-                      <Input name="email" type="email" required placeholder="tu@email.com" className="rounded-xl border-slate-200 h-12" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium">Servicio Interesado</label>
-                      <select name="service" className="w-full h-12 rounded-xl border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20">
-                        <option>Pintura de Interiores</option>
-                        <option>Alisado de Paredes</option>
-                        <option>Pintura de Exteriores</option>
-                        <option>Otros</option>
-                      </select>
+                      <label className="text-sm font-medium">Nombre</label>
+                      <Input name="name" required placeholder="Tu nombre" className="rounded-xl h-12" />
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium">Mensaje</label>
-                      <Textarea name="message" required placeholder="Cuéntanos un poco sobre lo que necesitas..." className="rounded-xl border-slate-200 min-h-[120px]" />
+                      <Textarea name="message" required placeholder="Cuéntanos qué necesitas..." className="rounded-xl min-h-[120px]" />
                     </div>
                     <Button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-white rounded-xl h-14 text-lg font-bold">
                       Enviar Solicitud
@@ -645,36 +486,27 @@ export default function App() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-2">
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-red-600 rounded-lg flex items-center justify-center text-white shadow-md shadow-blue-500/10">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-red-600 rounded-lg flex items-center justify-center text-white shadow-md">
                   <Paintbrush size={20} />
                 </div>
                 <span className="font-heading text-xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">Y&E Colors</span>
               </div>
-              <p className="text-slate-500 max-w-sm leading-relaxed">
-                Empresa líder en servicios de pintura y alisado. Nos apasiona transformar hogares y crear espacios donde dé gusto vivir.
+              <p className="text-slate-500 max-w-sm">
+                Empresa líder en servicios de pintura y alisado en Badajoz.
               </p>
             </div>
             <div>
               <h4 className="font-heading font-bold mb-6">Enlaces</h4>
               <ul className="space-y-4 text-sm text-slate-500">
-                <li><a href="#ye-colors" className="hover:text-orange-600 transition-colors">Y&E Colors</a></li>
+                <li><a href="#sobre-nosotros" className="hover:text-orange-600 transition-colors">Sobre Nosotros</a></li>
                 <li><a href="#galeria" className="hover:text-orange-600 transition-colors">Galería</a></li>
                 <li><a href="#opciones" className="hover:text-orange-600 transition-colors">Opciones</a></li>
                 <li><a href="#contacto" className="hover:text-orange-600 transition-colors">Contacto</a></li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-heading font-bold mb-6">Legal</h4>
-              <ul className="space-y-4 text-sm text-slate-500">
-                <li><a href="#" className="hover:text-orange-600 transition-colors">Aviso Legal</a></li>
-                <li><a href="#" className="hover:text-orange-600 transition-colors">Política de Privacidad</a></li>
-                <li><a href="#" className="hover:text-orange-600 transition-colors">Cookies</a></li>
-              </ul>
-            </div>
           </div>
-          <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
+          <div className="pt-8 border-t border-slate-200 text-center text-sm text-slate-400">
             <p>© 2026 Y&E Colors. Todos los derechos reservados.</p>
-            <p>Diseñado con ❤️ para tu hogar.</p>
           </div>
         </div>
       </footer>
@@ -686,7 +518,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8 bg-black/90 backdrop-blur-sm"
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
             onClick={() => setSelectedImage(null)}
           >
             <motion.div
@@ -696,39 +528,17 @@ export default function App() {
               className="relative max-w-5xl w-full bg-white rounded-[2rem] overflow-hidden shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                className="absolute top-6 right-6 z-10 p-2 bg-black/10 hover:bg-black/20 rounded-full transition-colors"
-                onClick={() => setSelectedImage(null)}
-              >
+              <button className="absolute top-6 right-6 z-10 p-2 bg-black/10 rounded-full" onClick={() => setSelectedImage(null)}>
                 <X size={24} />
               </button>
-
               <div className="grid md:grid-cols-2">
-                <div className="aspect-[4/3] md:aspect-auto">
-                  <img
-                    src={selectedImage.image}
-                    alt={selectedImage.title}
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-                <div className="p-8 sm:p-12 flex flex-col justify-center">
-                  <Badge className="w-fit mb-4 bg-orange-100 text-orange-700 border-none px-4 py-1">
-                    {selectedImage.category}
-                  </Badge>
-                  <h2 className="font-heading text-3xl sm:text-4xl font-bold mb-6">
-                    {selectedImage.title}
-                  </h2>
-                  <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                    {selectedImage.description}
-                  </p>
-                  <Button 
-                    className="w-fit bg-orange-600 hover:bg-orange-700 text-white rounded-full px-8 h-12"
-                    asChild
-                  >
-                    <a href="#contacto" onClick={() => setSelectedImage(null)}>
-                      Preguntar por este servicio
-                    </a>
+                <img src={selectedImage.image} alt={selectedImage.title} className="w-full h-full object-cover" />
+                <div className="p-8 flex flex-col justify-center">
+                  <Badge className="w-fit mb-4 bg-orange-100 text-orange-700">{selectedImage.category}</Badge>
+                  <h2 className="font-heading text-3xl font-bold mb-6">{selectedImage.title}</h2>
+                  <p className="text-lg text-slate-600 mb-8">{selectedImage.description}</p>
+                  <Button className="w-fit bg-orange-600 hover:bg-orange-700 text-white rounded-full px-8 h-12" asChild>
+                    <a href="#contacto" onClick={() => setSelectedImage(null)}>Preguntar por este servicio</a>
                   </Button>
                 </div>
               </div>
