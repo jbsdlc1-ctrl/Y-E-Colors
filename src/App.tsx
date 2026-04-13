@@ -47,73 +47,73 @@ const gallery: { title: string; category: string; description: string; image: st
     title: "Preparación de Superficie",
     category: "Alisado",
     description: "Primera fase de limpieza y rascado para asegurar la adherencia del material.",
-    image: "/antes.jpg"
+    image: "antes.jpg"
   },
   {
     title: "Tratamiento de Grietas",
     category: "Alisado",
     description: "Sellado y refuerzo de fisuras estructurales antes del enlucido.",
-    image: "/antes2.jpg"
+    image: "antes2.jpg"
   },
   {
     title: "Enlucido de Paredes",
     category: "Alisado",
     description: "Aplicación de capas de pasta para nivelar y suavizar la superficie.",
-    image: "/despues.jpg"
+    image: "despues.jpg"
   },
   {
     title: "Acabado Extra Liso",
     category: "Alisado",
     description: "Resultado final tras el lijado fino, listo para la imprimación.",
-    image: "/despues2.jpg"
+    image: "despues2.jpg"
   },
   {
     title: "Pintura en Dormitorio",
     category: "Interior",
     description: "Aplicación de pintura plástica mate con recorte perfecto en techos.",
-    image: "/IMG_20221020_130408.jpg"
+    image: "IMG_20221020_130408.jpg"
   },
   {
     title: "Detalle de Esquinas",
     category: "Interior",
     description: "Acabados limpios en ángulos y marcos de puertas.",
-    image: "/IMG_20221020_130445.jpg"
+    image: "IMG_20221020_130445.jpg"
   },
   {
     title: "Pintura de Salón",
     category: "Interior",
     description: "Renovación total de color con materiales de alta cubrición.",
-    image: "/IMG_20221020_130458.jpg"
+    image: "IMG_20221020_130458.jpg"
   },
   {
     title: "Iluminación y Color",
     category: "Interior",
     description: "Cómo el color transforma la luminosidad de la estancia.",
-    image: "/IMG_20221020_130522.jpg"
+    image: "IMG_20221020_130522.jpg"
   },
   {
     title: "Protección de Suelos",
     category: "Pintura",
     description: "Nuestra prioridad es la limpieza; protegemos todo antes de empezar.",
-    image: "/IMG_20221024_162401.jpg"
+    image: "IMG_20221024_162401.jpg"
   },
   {
     title: "Recorte de Rodapiés",
     category: "Pintura",
     description: "Precisión máxima en los encuentros con el suelo.",
-    image: "/IMG_20221024_171231.jpg"
+    image: "IMG_20221024_171231.jpg"
   },
   {
     title: "Segunda Mano de Acabado",
     category: "Pintura",
     description: "Uniformidad total en la aplicación del color.",
-    image: "/IMG_20221029_095139.jpg"
+    image: "IMG_20221029_095139.jpg"
   },
   {
     title: "Resultado Profesional",
     category: "Pintura",
     description: "Entrega de obra limpia y con acabados impecables.",
-    image: "/IMG_20221029_095215.jpg"
+    image: "IMG_20221029_095215.jpg"
   }
 ];
 
