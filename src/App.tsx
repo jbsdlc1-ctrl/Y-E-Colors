@@ -235,7 +235,7 @@ export default function App() {
             >
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/IMG_20221029_095215.jpg" 
+                  src="IMG_20221029_095215.jpg" 
                   alt="Resultado final de alisado y pintura Y&E Colors" 
                   className="w-full h-auto object-cover"
                   referrerPolicy="no-referrer"
