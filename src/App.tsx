@@ -155,7 +155,7 @@ export default function App() {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-8">
-              <a href="#ye-colors" className="text-sm font-medium hover:text-orange-600 transition-colors">Y&E Colors</a>
+              <a href="#sobre-nosotros" className="text-sm font-medium hover:text-orange-600 transition-colors">sobre-nosotros</a>
               <a href="#galeria" className="text-sm font-medium hover:text-orange-600 transition-colors">Galería</a>
               <a href="#opciones" className="text-sm font-medium hover:text-orange-600 transition-colors">Opciones</a>
               <a href="#contacto" className="text-sm font-medium hover:text-orange-600 transition-colors">Contacto</a>
@@ -183,7 +183,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden bg-white border-b border-slate-100 p-4 space-y-4"
           >
-            <a href="#Y&E Colors" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Y&E Colors</a>
+            <a href="#sobre-nosotros" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>sobre-nosotros</a>
             <a href="#galeria" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Galería</a>
             <a href="#opciones" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Opciones</a>
             <a href="#contacto" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Contacto</a>
@@ -263,8 +263,12 @@ export default function App() {
       <section id="galeria" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-xl">
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-4">Nuestro Trabajo</h2>
-            <p className="text-slate-600">
+            <h2 className="<h2 className="font-heading text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+  Nuestra historia y compromiso con <span className="text-orange-600">tu hogar</span>.
+</h2>">Nuestro Trabajo</h2>
+            <p className="<p>
+  En <span className="font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Y&E Colors</span>, somos un equipo apasionado por la renovación de espacios. Con años de experiencia en Badajoz, nos hemos especializado en transformar paredes con gotelé en superficies lisas y modernas, aplicando siempre las mejores técnicas de pintura.
+</p>">
               Una muestra de los proyectos que hemos realizado recientemente. Calidad visible en cada pincelada.
             </p>
           </div>
