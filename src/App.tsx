@@ -183,7 +183,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden bg-white border-b border-slate-100 p-4 space-y-4"
           >
-            <a href="#ye-colors" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Y&E Colors</a>
+            <a href="#Y&E Colors" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Y&E Colors</a>
             <a href="#galeria" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Galería</a>
             <a href="#opciones" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Opciones</a>
             <a href="#contacto" className="block text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Contacto</a>
